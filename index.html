@@ -40,8 +40,8 @@
 		<h1 class="masthead">Time of Day</h1>
 	</header>
     <main>
-	 <header><h3>A JavaScript Project by YOUR NAME HERE</h3></header>
-	 <h3 id="my-greeting">Greeting Goes Here</h3>
+	 <header><h3>A JavaScript Project by Nikaya Manalo</h3></header>
+	 <h3 id="my-greeting">Greetings Goes Here</h3>
 	    <p>Explain what your page does and how it works here!</p>
 	  <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
      <footer>
@@ -72,7 +72,15 @@
 		//alert("Good Morning!");
 		mySentence = "Good Morning!";
 		myColor= "blue";
+	}
 	
+	if(myHour > 11){
+		//alert("Good Evening!");
+		mySentence ="Good Evening!";
+		myColor="green"
+	}else{
+		mySentence="Good Night!";
+		myColor="navy"
 	}
 	document.getElementById("my-greeting").innerHTML = mySentence;
 	document.body.style.backgroundColor = myColor
