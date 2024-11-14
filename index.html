@@ -42,11 +42,15 @@
     <main>
 	 <header><h3>A JavaScript Project by Nikaya Manalo</h3></header>
 	 <h3 id="my-greeting">Greetings Goes Here</h3>
-	    <p>Explain what your page does and how it works here!</p>
+	    <p>Use JavaScript to determine the current hour, and present a different image, custom message, and color based on each of the following times of day:</p>
+		<p>Morning (5am to 12 noon) </p>
+		<p>Afternoon (12 noon to 6pm)</p>
+		<p>Evening (6pm to 11pm)</p>
+		<p>Night (11pm to 5am)</p>
 	  <img src="http://dummyimage.com/300x400" alt="Time of Day Image" class="flexible">
      <footer>
       <p><small>&copy; 2022 by 
-          YOUR NAME HERE, All Rights Reserved ~ 
+          Nikaya Manalo, All Rights Reserved ~ 
           <a id="html-checker" href="#" target="_blank">Check HTML</a> ~ 
           <a id="css-checker" href="#" target="_blank">Check CSS</a></small>
      </p>
@@ -67,20 +71,20 @@
 	if(myHour >12){
 		//alert("Good Afternoon!");
 		mySentence = "Good Afternoon!";
-		myColor = "purple";
+		myColor = "red";
 	}else{
 		//alert("Good Morning!");
 		mySentence = "Good Morning!";
-		myColor= "blue";
+		myColor= "orange";
 	}
-	
+
 	if(myHour > 11){
 		//alert("Good Evening!");
 		mySentence ="Good Evening!";
-		myColor="green"
+		myColor="blue"
 	}else{
 		mySentence="Good Night!";
-		myColor="navy"
+		myColor="green"
 	}
 	document.getElementById("my-greeting").innerHTML = mySentence;
 	document.body.style.backgroundColor = myColor
